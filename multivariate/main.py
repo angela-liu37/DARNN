@@ -255,13 +255,15 @@ def go(dataset, horizon):
 
 if __name__ == '__main__':
     # datasets = ['electricity', 'exchange_rate', 'solar-energy', 'traffic']
+    datasets = ['exchange_rate']
     # datasets = datasets[1:]
     # datasets = datasets[::-1]
-    import sys
-    datasets = [sys.argv[1]]
-    horizons = [int(sys.argv[2])]
-    print(datasets, horizons)
+    # import sys
+    # datasets = [sys.argv[1]]
+    # horizons = [int(sys.argv[2])]
+    # print(datasets, horizons)
     #horizons = [3, 6, 12, 24]
+    horizons = [6]
 
     f = open('log', 'a+')
     f.write('dataset,horizon,mae,rmse,mape,rrse,corr\n')
