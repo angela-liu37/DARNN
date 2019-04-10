@@ -1,0 +1,6 @@
+TEST
+backup
+*.txt
+data
+log*
+*.pyc
